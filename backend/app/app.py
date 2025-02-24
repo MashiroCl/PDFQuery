@@ -1,9 +1,10 @@
-from flask import Flask, jsonify, request
 import os
+from flask import Flask, jsonify, request
+
 
 app = Flask(__name__)
 
-UPLOAD_FOLDER = "data"
+UPLOAD_FOLDER = "pdfdata"
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
 
